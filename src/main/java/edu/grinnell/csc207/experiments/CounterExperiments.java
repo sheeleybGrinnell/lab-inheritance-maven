@@ -5,6 +5,7 @@ package edu.grinnell.csc207.experiments;
 
 import java.io.PrintWriter;
 import edu.grinnell.csc207.util.BasicCounter;
+import edu.grinnell.csc207.util.Tally;
 import edu.grinnell.csc207.util.Counter;
 
 /**
@@ -22,7 +23,7 @@ public static void main(String[] args) throws Exception {
     PrintWriter pen = new PrintWriter(System.out, true);
 
     // Set up some counters
-    Counter alpha = new BasicCounter(0);
+    Counter alpha = new Tally();
     Counter beta = new BasicCounter(123);
     Counter gamma = new BasicCounter(-5);
 
